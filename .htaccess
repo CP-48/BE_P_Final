@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+php_value max_execution_time 600
+#To avoid nasty people accessing your files
+Options -Indexes
